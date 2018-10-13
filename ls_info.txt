@@ -1,0 +1,11 @@
+.:
+итого 4
+drw-rw-r--. 2 aleksandr aleksandr 22 сен 28 21:33 dir
+-rw-r-----. 1 root      aleksandr  5 сен 28 21:29 file
+-rw-------. 1 aleksandr aleksandr  0 сен 28 22:00 file1
+-rw--w--w-. 1 aleksandr aleksandr  0 сен 28 22:05 file2
+-rw-rw-rw-. 1 aleksandr aleksandr  0 сен 28 22:07 file2_1_more_try
+
+./dir:
+итого 0
+-????????? ? ? ? ?            ? new_file

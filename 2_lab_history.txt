@@ -1,0 +1,49 @@
+    1  mkdir test
+    2  cd test/
+    3  ls -l
+    4  touch file
+    5  ls -l
+    6  chmod a-r file
+    7  chmod a-w file
+    8  ls -l
+    9  echo "test" > ./file
+   10  cat file
+   11  chmod u-w file
+   12  ll
+   13  chmod u+w file
+   14  ll
+   15  echo "test" > ./file
+   16  cat file
+   17  chmod g+r file
+   18  ll
+   19  cat file
+   20  chmod u+r file
+   21  ls -l
+   22  cat file
+   23  mkdir dir
+   24  touch ./dir/new_file
+   25  echo "file 2" > ./dir/new_file
+   26  cd dir
+   27  ls
+   28  cd ..
+   29  chmod a-x dir
+   30  cat ./dir/new_file
+   31  rm ./dir/new_file
+   32  chown root ./dir/new_file
+   33  chown :root ./dir/new_file
+   34  man umask
+   35  umask 177
+   36  touch file1
+   37  ls -l
+   38  umask 011
+   39  umask 044
+   40  touch file2
+   41  ls -l
+   42  umask 111
+   43  touch file2_1_more_try
+   44  ls -l
+   45  cat file
+   46  ls -l
+   47  cat file
+   48  ls -lR
+   49  history > ~/OpSysSec/2_lab_history.txt
