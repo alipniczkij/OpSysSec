@@ -1,0 +1,17 @@
+  424  ls -l /dev/sda{,[123]}
+  425  lsblk --list
+  426  cat /proc/diskstats 
+  427  cat /proc/devices 
+  428  dd if=/dev/zero of=./fs.img bs=1M count=10
+  429  losetup --find --show ./fs.img
+  430  losetup --list
+  431  mkfs -t ext4 /dev/loop0
+  432  blkid /dev/loop0
+  433  mount /dev/loop0 /mnt
+  434  mount | grep /mnt
+  435  df -h /mnt
+  436  df -hi /mnt
+  437  umount /dev/loop0
+  438  tune2fs -l /dev/loop0
+  439  losetup --detach /dev/loop0
+  440  losetup --list 

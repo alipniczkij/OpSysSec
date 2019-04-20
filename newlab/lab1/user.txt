@@ -1,0 +1,31 @@
+  961  ldd /bin/ls | grep selinux
+  962  ls -l /etc/selinux/
+  963  ls -l /etc/selinux/targeted/
+  964  vi /etc/selinux/config 
+  965  sestatus
+  966  getenforce
+  967  cat /sys/fs/selinux/enforce 
+  968  vi /etc/selinux/config 
+  969  sudo
+  970  su
+  971  sestatus
+  972  getenforce
+  973  sudo
+  974  su
+  975  sestatus
+  976  getenforce
+  977  su
+  978  setenforce 1
+  979  su
+  980  cd OpSysSec
+  981  mkdir newlab
+  982  cd newlab/
+  983  touch selin.txt
+  984  ls -z selin.txt 
+  985  ls -Z selin.txt 
+  986  ls -Z ./
+  987   cd ../
+  988  dir
+  989  ls -Z
+  990  sesearch -T -s httpd_t -t var_log_t
+  991  sesearch -T -s httpd_t -t tmp_t
